@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ORBITRON GAMING – The ultimate esports universe with competitive tournaments, elite squads, and futuristic gameplay." />
+  <title>ORBITRON GAMING | Next Generation Esports</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Rajdhani:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- Loading Screen -->
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">ORBITRON</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+      <div class="loader-text">INITIALIZING SYSTEMS...</div>
+    </div>
+  </div>
+
+  <!-- Particle Canvas -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- ═══════════════════════ NAVBAR ═══════════════════════ -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-icon"><i class="fas fa-meteor"></i></span>
+        <span class="logo-text">ORBITRON</span>
+      </a>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li><a href="#tournaments" class="nav-link">Tournaments</a></li>
+        <li><a href="#players" class="nav-link">Players</a></li>
+        <li><a href="#stats" class="nav-link">Stats</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="#contact" class="btn-nav">Join Now</a>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ═══════════════════════ HERO ═══════════════════════ -->
+  <section id="home" class="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="glow-orb orb-1"></div>
+      <div class="glow-orb orb-2"></div>
+      <div class="glow-orb orb-3"></div>
+    </div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>SEASON 7 NOW LIVE</span>
+      </div>
+      <h1 class="hero-title">
+        ENTER THE<br/>
+        <span class="gradient-text">NEXT GENERATION</span><br/>
+        OF GAMING
+      </h1>
+      <p class="hero-sub">
+        Join the ultimate esports universe with competitive tournaments,<br class="br-desktop"/>
+        elite squads, and futuristic gameplay.
+      </p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn-primary" id="joinBtn">
+          <span>Join Now</span>
+          <i class="fas fa-arrow-right"></i>
+        </a>
+        <a href="#features" class="btn-secondary" id="exploreBtn">
+          <span>Explore Arena</span>
+          <i class="fas fa-play"></i>
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat">
+          <span class="hstat-num">250K+</span>
+          <span class="hstat-label">Players</span>
+        </div>
+        <div class="hstat-divider"></div>
+        <div class="hstat">
+          <span class="hstat-num">$2M+</span>
+          <span class="hstat-label">Prize Pool</span>
+        </div>
+        <div class="hstat-divider"></div>
+        <div class="hstat">
+          <span class="hstat-num">180+</span>
+          <span class="hstat-label">Countries</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="hex-ring ring-1"></div>
+      <div class="hex-ring ring-2"></div>
+      <div class="hex-ring ring-3"></div>
+      <div class="hero-avatar">
+        <div class="avatar-glow"></div>
+        <div class="avatar-icon"><i class="fas fa-gamepad"></i></div>
+      </div>
+    </div>
+
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll Down</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ FEATURES ═══════════════════════ -->
+  <section id="features" class="features section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">WHY CHOOSE US</span>
+        <h2 class="section-title">ELITE <span class="gradient-text">FEATURES</span></h2>
+        <p class="section-desc">Everything you need to dominate the competitive gaming scene.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card reveal" data-delay="0">
+          <div class="card-glow"></div>
+          <div class="card-icon"><i class="fas fa-trophy"></i></div>
+          <h3>Competitive Esports</h3>
+          <p>Battle in ranked leagues across multiple titles. Prove your skill and rise through the competitive tiers.</p>
+          <div class="card-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+        <div class="feature-card reveal" data-delay="100">
+          <div class="card-glow"></div>
+          <div class="card-icon"><i class="fas fa-globe"></i></div>
+          <h3>Global Tournaments</h3>
+          <p>Compete against players worldwide in weekly and seasonal tournaments with massive prize pools.</p>
+          <div class="card-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+        <div class="feature-card reveal" data-delay="200">
+          <div class="card-glow"></div>
+          <div class="card-icon"><i class="fas fa-users"></i></div>
+          <h3>Elite Gaming Squad</h3>
+          <p>Form unstoppable teams, coordinate strategies, and build your legendary esports roster.</p>
+          <div class="card-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+        <div class="feature-card reveal" data-delay="300">
+          <div class="card-glow"></div>
+          <div class="card-icon"><i class="fas fa-broadcast-tower"></i></div>
+          <h3>Live Streaming</h3>
+          <p>Stream your matches in real-time, grow your audience, and become the next esports content creator.</p>
+          <div class="card-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+        <div class="feature-card reveal" data-delay="400">
+          <div class="card-glow"></div>
+          <div class="card-icon"><i class="fas fa-shield-alt"></i></div>
+          <h3>Anti-Cheat System</h3>
+          <p>Advanced AI-powered detection ensures fair play across all modes and competitive matches.</p>
+          <div class="card-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+        <div class="feature-card reveal" data-delay="500">
+          <div class="card-glow"></div>
+          <div class="card-icon"><i class="fas fa-chart-line"></i></div>
+          <h3>Performance Analytics</h3>
+          <p>Deep stats, heatmaps, and AI coaching tools to accelerate your improvement and ranking.</p>
+          <div class="card-arrow"><i class="fas fa-arrow-right"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ TOURNAMENTS ═══════════════════════ -->
+  <section id="tournaments" class="tournaments section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">UPCOMING EVENTS</span>
+        <h2 class="section-title">TOURNAMENT <span class="gradient-text">ARENA</span></h2>
+        <p class="section-desc">Register now and compete for glory and massive prize pools.</p>
+      </div>
+
+      <div class="tournament-grid">
+        <div class="tournament-card reveal featured-tournament">
+          <div class="t-badge">FEATURED</div>
+          <div class="t-header">
+            <div class="t-game-icon"><i class="fas fa-crown"></i></div>
+            <div class="t-info">
+              <h3>ORBITRON WORLD CUP</h3>
+              <span class="t-game">Multi-Title Championship</span>
+            </div>
+          </div>
+          <div class="t-countdown" id="countdownMain">
+            <div class="cd-unit"><span class="cd-num" id="cd-days">00</span><span class="cd-label">Days</span></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-unit"><span class="cd-num" id="cd-hours">00</span><span class="cd-label">Hours</span></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-unit"><span class="cd-num" id="cd-mins">00</span><span class="cd-label">Mins</span></div>
+            <div class="cd-sep">:</div>
+            <div class="cd-unit"><span class="cd-num" id="cd-secs">00</span><span class="cd-label">Secs</span></div>
+          </div>
+          <div class="t-details">
+            <div class="t-detail"><i class="fas fa-dollar-sign"></i><span>$500,000 Prize Pool</span></div>
+            <div class="t-detail"><i class="fas fa-users"></i><span>512 Teams</span></div>
+            <div class="t-detail"><i class="fas fa-calendar"></i><span>June 15, 2026</span></div>
+          </div>
+          <a href="#contact" class="btn-primary full-width">Register Now</a>
+        </div>
+
+        <div class="tournament-list">
+          <div class="t-item reveal" data-delay="100">
+            <div class="t-item-icon"><i class="fas fa-bolt"></i></div>
+            <div class="t-item-info">
+              <h4>CYBER CLASH INVITATIONAL</h4>
+              <span>May 28 · 64 Teams · $50K</span>
+            </div>
+            <div class="t-item-status open">OPEN</div>
+          </div>
+          <div class="t-item reveal" data-delay="200">
+            <div class="t-item-icon"><i class="fas fa-fire"></i></div>
+            <div class="t-item-info">
+              <h4>NEON LEAGUE SEASON 7</h4>
+              <span>June 1 · 128 Teams · $100K</span>
+            </div>
+            <div class="t-item-status open">OPEN</div>
+          </div>
+          <div class="t-item reveal" data-delay="300">
+            <div class="t-item-icon"><i class="fas fa-star"></i></div>
+            <div class="t-item-info">
+              <h4>PHANTOM STRIKE OPEN</h4>
+              <span>June 8 · 32 Teams · $25K</span>
+            </div>
+            <div class="t-item-status soon">SOON</div>
+          </div>
+          <div class="t-item reveal" data-delay="400">
+            <div class="t-item-icon"><i class="fas fa-meteor"></i></div>
+            <div class="t-item-info">
+              <h4>GALAXY CUP QUALIFIER</h4>
+              <span>June 12 · 256 Teams · $75K</span>
+            </div>
+            <div class="t-item-status soon">SOON</div>
+          </div>
+          <div class="t-item reveal" data-delay="500">
+            <div class="t-item-icon"><i class="fas fa-gem"></i></div>
+            <div class="t-item-info">
+              <h4>DIAMOND CIRCUIT FINALS</h4>
+              <span>June 20 · 16 Teams · $200K</span>
+            </div>
+            <div class="t-item-status invite">INVITE</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ PLAYERS ═══════════════════════ -->
+  <section id="players" class="players section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">HALL OF FAME</span>
+        <h2 class="section-title">TOP <span class="gradient-text">PLAYERS</span></h2>
+        <p class="section-desc">Meet the legends who dominate our leaderboards.</p>
+      </div>
+
+      <div class="players-grid">
+        <div class="player-card reveal" data-delay="0">
+          <div class="player-rank">#1</div>
+          <div class="player-avatar"><i class="fas fa-user-astronaut"></i></div>
+          <div class="player-info">
+            <h3>ShadowVortex</h3>
+            <span class="player-role">Rifler · Team NOVA</span>
+          </div>
+          <div class="player-stats">
+            <div class="pstat"><span>K/D</span><strong>3.8</strong></div>
+            <div class="pstat"><span>Win%</span><strong>78%</strong></div>
+            <div class="pstat"><span>Rank</span><strong>APEX</strong></div>
+          </div>
+          <div class="player-badge gold"><i class="fas fa-crown"></i> Champion</div>
+        </div>
+
+        <div class="player-card reveal" data-delay="150">
+          <div class="player-rank">#2</div>
+          <div class="player-avatar"><i class="fas fa-user-ninja"></i></div>
+          <div class="player-info">
+            <h3>NebulaStrike</h3>
+            <span class="player-role">Sniper · Team VOID</span>
+          </div>
+          <div class="player-stats">
+            <div class="pstat"><span>K/D</span><strong>3.5</strong></div>
+            <div class="pstat"><span>Win%</span><strong>74%</strong></div>
+            <div class="pstat"><span>Rank</span><strong>APEX</strong></div>
+          </div>
+          <div class="player-badge silver"><i class="fas fa-medal"></i> Elite</div>
+        </div>
+
+        <div class="player-card reveal" data-delay="300">
+          <div class="player-rank">#3</div>
+          <div class="player-avatar"><i class="fas fa-user-secret"></i></div>
+          <div class="player-info">
+            <h3>CyberPhantom</h3>
+            <span class="player-role">IGL · Team APEX</span>
+          </div>
+          <div class="player-stats">
+            <div class="pstat"><span>K/D</span><strong>3.2</strong></div>
+            <div class="pstat"><span>Win%</span><strong>71%</strong></div>
+            <div class="pstat"><span>Rank</span><strong>APEX</strong></div>
+          </div>
+          <div class="player-badge bronze"><i class="fas fa-award"></i> Pro</div>
+        </div>
+
+        <div class="player-card reveal" data-delay="450">
+          <div class="player-rank">#4</div>
+          <div class="player-avatar"><i class="fas fa-user-shield"></i></div>
+          <div class="player-info">
+            <h3>ZeroGravity</h3>
+            <span class="player-role">Support · Team ZERO</span>
+          </div>
+          <div class="player-stats">
+            <div class="pstat"><span>K/D</span><strong>2.9</strong></div>
+            <div class="pstat"><span>Win%</span><strong>68%</strong></div>
+            <div class="pstat"><span>Rank</span><strong>DIAMOND</strong></div>
+          </div>
+          <div class="player-badge blue"><i class="fas fa-star"></i> Rising</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ STATS ═══════════════════════ -->
+  <section id="stats" class="stats-section section">
+    <div class="stats-bg">
+      <div class="glow-orb orb-4"></div>
+    </div>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">LIVE DATA</span>
+        <h2 class="section-title">PLATFORM <span class="gradient-text">STATS</span></h2>
+      </div>
+      <div class="stats-grid">
+        <div class="stat-card reveal" data-delay="0">
+          <div class="stat-icon"><i class="fas fa-users"></i></div>
+          <div class="stat-number" data-target="250000">0</div>
+          <div class="stat-label">Active Players</div>
+          <div class="stat-bar"><div class="stat-fill" style="width:85%"></div></div>
+        </div>
+        <div class="stat-card reveal" data-delay="100">
+          <div class="stat-icon"><i class="fas fa-gamepad"></i></div>
+          <div class="stat-number" data-target="15000">0</div>
+          <div class="stat-label">Matches Played</div>
+          <div class="stat-bar"><div class="stat-fill" style="width:72%"></div></div>
+        </div>
+        <div class="stat-card reveal" data-delay="200">
+          <div class="stat-icon"><i class="fas fa-trophy"></i></div>
+          <div class="stat-number" data-target="2400">0</div>
+          <div class="stat-label">Tournaments Hosted</div>
+          <div class="stat-bar"><div class="stat-fill" style="width:60%"></div></div>
+        </div>
+        <div class="stat-card reveal" data-delay="300">
+          <div class="stat-icon"><i class="fas fa-dollar-sign"></i></div>
+          <div class="stat-number" data-target="2000000" data-prefix="$">0</div>
+          <div class="stat-label">Prize Money Awarded</div>
+          <div class="stat-bar"><div class="stat-fill" style="width:90%"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ ABOUT ═══════════════════════ -->
+  <section id="about" class="about section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal">
+          <div class="about-hex">
+            <div class="hex-inner">
+              <i class="fas fa-meteor"></i>
+            </div>
+          </div>
+          <div class="about-floater f1"><i class="fas fa-trophy"></i></div>
+          <div class="about-floater f2"><i class="fas fa-bolt"></i></div>
+          <div class="about-floater f3"><i class="fas fa-star"></i></div>
+        </div>
+        <div class="about-content reveal" data-delay="200">
+          <span class="section-tag">OUR STORY</span>
+          <h2 class="section-title">ABOUT <span class="gradient-text">ORBITRON</span></h2>
+          <p>Founded in 2020, Orbitron Gaming was built by gamers, for gamers. We believe competitive gaming is the sport of the future — and we're building the infrastructure to make that future happen.</p>
+          <p>From grassroots community tournaments to million-dollar championships, our platform empowers every player — beginner or legend — to compete, grow, and connect.</p>
+          <div class="about-features">
+            <div class="af-item"><i class="fas fa-check-circle"></i><span>Industry-leading tournament engine</span></div>
+            <div class="af-item"><i class="fas fa-check-circle"></i><span>AI-powered skill matchmaking</span></div>
+            <div class="af-item"><i class="fas fa-check-circle"></i><span>180+ country player base</span></div>
+            <div class="af-item"><i class="fas fa-check-circle"></i><span>Zero-tolerance anti-cheat policy</span></div>
+          </div>
+          <a href="#contact" class="btn-primary">Join the Revolution <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ CONTACT ═══════════════════════ -->
+  <section id="contact" class="contact section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">GET IN TOUCH</span>
+        <h2 class="section-title">JOIN THE <span class="gradient-text">ARENA</span></h2>
+        <p class="section-desc">Ready to compete? Sign up today and claim your place in the leaderboards.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <div class="ci-card">
+            <div class="ci-icon"><i class="fas fa-envelope"></i></div>
+            <div><h4>Email Us</h4><p>hello@orbitrongaming.gg</p></div>
+          </div>
+          <div class="ci-card">
+            <div class="ci-icon"><i class="fab fa-discord"></i></div>
+            <div><h4>Discord</h4><p>discord.gg/orbitron</p></div>
+          </div>
+          <div class="ci-card">
+            <div class="ci-icon"><i class="fas fa-headset"></i></div>
+            <div><h4>Support</h4><p>24/7 Live Support</p></div>
+          </div>
+        </div>
+
+        <form class="contact-form reveal glass-form" id="contactForm" data-delay="200">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your gamer tag" required />
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@domain.com" required />
+          </div>
+          <div class="form-group">
+            <label for="game">Favorite Game</label>
+            <select id="game" name="game">
+              <option value="">Select a game</option>
+              <option>Valorant</option>
+              <option>CS2</option>
+              <option>Fortnite</option>
+              <option>Apex Legends</option>
+              <option>League of Legends</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" placeholder="Tell us about yourself..."></textarea>
+          </div>
+          <button type="submit" class="btn-primary full-width" id="submitBtn">
+            <span>Submit & Join</span>
+            <i class="fas fa-paper-plane"></i>
+          </button>
+          <div class="form-success" id="formSuccess">
+            <i class="fas fa-check-circle"></i> You're in! Welcome to Orbitron Gaming.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════ FOOTER ═══════════════════════ -->
+  <footer class="footer">
+    <div class="footer-glow"></div>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="nav-logo">
+            <span class="logo-icon"><i class="fas fa-meteor"></i></span>
+            <span class="logo-text">ORBITRON</span>
+          </a>
+          <p>The next generation esports platform. Compete, grow, and become a legend.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link" aria-label="Discord"><i class="fab fa-discord"></i></a>
+            <a href="#" class="social-link" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="#" class="social-link" aria-label="Twitch"><i class="fab fa-twitch"></i></a>
+            <a href="#" class="social-link" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#tournaments">Tournaments</a></li>
+            <li><a href="#players">Players</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Community</h4>
+          <ul>
+            <li><a href="#">Discord Server</a></li>
+            <li><a href="#">Reddit</a></li>
+            <li><a href="#">Twitch Channel</a></li>
+            <li><a href="#">YouTube</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Cookie Policy</a></li>
+            <li><a href="#">Refund Policy</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-divider"></div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Orbitron Gaming. All rights reserved.</p>
+        <p>Built for Champions &nbsp;|&nbsp; <span class="gradient-text">SEASON 7</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
+</body>
+</html>
